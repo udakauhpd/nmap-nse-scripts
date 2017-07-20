@@ -1,0 +1,9 @@
+https://isc.sans.edu/forums/diary/Using+nmap+to+scan+for+MS17010+CVE20170143+EternalBlue/22574/.
+------------------
+Using nmap to scan for MS17-010 (CVE-2017-0143 EternalBlue)
+------------------
+https://gist.github.com/Neo23x0/60268852ff3a5776ef66bc15d50a024a
+
+This is the nmap command line that seems to work best with this nse script.  (with thanks to Neo23x0)
+
+nmap  -Pn -p445 --open --max-hostgroup 3 --script smb-vuln-ms17-010  <ip_netblock>
